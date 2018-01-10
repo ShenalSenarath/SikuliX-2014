@@ -1,0 +1,10 @@
+
+description = ''
+dependencies {
+  compile project(':sikulix')
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version:'1.1.1'
+    compile group: 'org.swinglabs.swingx', name: 'swingx-core', version:'1.6.5-1'
+    compile group: 'com.jgoodies', name: 'forms', version:'1.2.1'
+    compile group: 'com.explodingpixels', name: 'mac_widgets', version:'0.9.5'
+  compile project(':sxjygments')
+}

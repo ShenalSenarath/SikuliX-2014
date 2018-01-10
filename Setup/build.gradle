@@ -1,0 +1,7 @@
+
+description = 'sikulixsetup'
+dependencies {
+  compile project(':sikulixapi')
+    compile group: 'org.swinglabs', name: 'swing-layout', version:'1.0.3'
+    compile group: 'org.rauschig', name: 'jarchivelib', version:'0.6.0'
+}

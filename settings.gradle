@@ -1,0 +1,20 @@
+rootProject.name = 'sikulix1'
+include ':sikulixlibslux'
+include ':sikulixlibsmac'
+include ':sikulixlibswin'
+include ':sikulixapi'
+include ':sikulixsetupAPI'
+include ':sxjygments'
+include ':sikulix'
+include ':sikulixsetupIDE'
+include ':sikulixsetup'
+
+project(':sikulixlibslux').projectDir = "$rootDir/Libslux" as File
+project(':sikulixlibsmac').projectDir = "$rootDir/Libsmac" as File
+project(':sikulixlibswin').projectDir = "$rootDir/Libswin" as File
+project(':sikulixapi').projectDir = "$rootDir/API" as File
+project(':sikulixsetupAPI').projectDir = "$rootDir/SetupAPI" as File
+project(':sxjygments').projectDir = "$rootDir/Jygments4SikuliX" as File
+project(':sikulix').projectDir = "$rootDir/IDE" as File
+project(':sikulixsetupIDE').projectDir = "$rootDir/SetupIDE" as File
+project(':sikulixsetup').projectDir = "$rootDir/Setup" as File

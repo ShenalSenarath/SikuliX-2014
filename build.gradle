@@ -1,0 +1,30 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'com.sikulix'
+version = '1.1.1'
+}
+
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 1.7
+  targetCompatibility = 1.7
+  tasks.withType(JavaCompile) {
+  	options.encoding = 'UTF-8'
+  }
+
+  
+  repositories {
+    mavenLocal()    
+    maven { url "https://jitpack.io" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+    maven { url "file://C:/projects/SikuliX-2014/API/lib" }
+  }
+	
+  
+  dependencies {
+    testCompile group: 'junit', name: 'junit', version:'4.10'
+}
+
+  
+}
